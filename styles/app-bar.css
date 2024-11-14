@@ -11,22 +11,12 @@
     font-weight: normal;
 }
 body {
-    background: radial-gradient(
-        circle at top left,  
-        #020102 20%, 
-        #040303 35%, 
-        #060405 50%, 
-        #090606 65%, 
-        #0C0708 75%, 
-        #0F090A 85%, 
-        #120B0C 90%, 
-        #150D0E 94%, 
-        #170F0F 97%, 
-        #1A1011 99%, 
-        #1D1212 100%);
-height: 100vh;
-margin: 0;
+    height: 100vh;
+    margin: 0;
+    background: #221518 95%;
+    overflow-x: hidden;
 }
+
 .app-bar-castom{
     height: 5%;
     display: flex;
@@ -41,40 +31,25 @@ margin: 0;
     color: #F7E1BC;
 
 }
+.glow {
+    position: relative; 
+    height: 300px; 
+    width: 300px; 
+    background: url(../images/Glow2.png) no-repeat center center; 
+    background-size: cover; 
+    z-index: -1; 
+    margin-top: 0px; 
+    margin-left: 0px;
+}
 .img-logo {
     position: relative; 
     height: 50px;
     width: 50px;
-    background-size: cover;
-    z-index: 1; 
-}
-
-.img-logo {
-    position: relative;
-    height: 50px;
-    width: 50px;
     z-index: 1;
+    background: transparent;
     background-size: cover;
     display: block;
-}
-
-.img-logo::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(
-        circle,
-        rgba(224, 168, 114, 0.5) 10%,   
-        rgba(248, 228, 190, 0.3) 30%,   
-        rgba(255, 243, 224, 0.1) 60%,   
-        transparent 100%
-    );
-    border-radius: 50%;
-    z-index: -1;
-    pointer-events: none;
+  
 }
 .button-conteiner{
 height: auto;
